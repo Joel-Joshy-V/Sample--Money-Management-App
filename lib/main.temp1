@@ -123,3 +123,6 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
+
+dart run build_runner watch --use-polling-watcher --delete-conflicting-outputs

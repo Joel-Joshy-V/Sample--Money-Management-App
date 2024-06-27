@@ -3,7 +3,6 @@ part 'category_model.g.dart';
 
 @HiveType(typeId: 2)
 enum categoryType {
-  
   @HiveField(0)
   income,
 
@@ -13,7 +12,6 @@ enum categoryType {
 
 @HiveType(typeId: 1)
 class categoryModel {
-
   @HiveField(0)
   final String id;
 
@@ -32,4 +30,9 @@ class categoryModel {
     required this.type,
     this.isDeleted = false,
   });
+
+  @override
+  String toString() {
+    return '{$name $type}';
+  }
 }
